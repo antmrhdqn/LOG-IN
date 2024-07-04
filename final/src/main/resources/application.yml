@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://squirrel.ohgiraffers.com:3360/insider
-    username: hikdt2312
-    password: hikdt2312
+    url: jdbc:mysql://localhost:3306/insider
+    username: ohgiraffers
+    password: ohgiraffers
     driver-class-name: com.mysql.cj.jdbc.Driver
   servlet:
     multipart:
