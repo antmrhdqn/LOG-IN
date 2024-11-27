@@ -19,14 +19,16 @@
 - **임진아**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/lja9207)
 
-- 팀원 
-### 프로젝트 개요
+
+---
+
+# 프로젝트 개요
 
 SpringBoot와 React를 기반으로 한 번의 로그인으로 모든 업무를 처리할 수 있는 HRMS를 구현하였습니다.
 
 ---
 
-### Skill Set
+# Skill Set
 
 <div align="center">
 <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white"> 
