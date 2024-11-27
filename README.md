@@ -1,5 +1,4 @@
-### LOG:IN PROJECT
-
+### LOG:IN
 ---
 
 ### 팀명: **LOG:IN**
