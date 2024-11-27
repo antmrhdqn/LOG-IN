@@ -7,16 +7,16 @@
 - **김동환**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/antmrhdqn)
 
-**김정희**
+- **김정희**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/modaing)
 
-**김지환**
+- **김지환**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/jeehwan98)
 
-**심민섭**
+- **심민섭**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/her9797)
 
-**임진아**
+- **임진아**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/lja9207)
 
 - 팀원 
