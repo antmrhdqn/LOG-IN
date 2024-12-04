@@ -51,6 +51,8 @@ SpringBoot와 React를 기반으로 한 번의 로그인으로 모든 업무를 
 - Spring Boot와 React를 활용한 효율적인 HRMS 개발
 - REST API 기반의 통합 시스템 설계
 
+## 담당사항
+
 ---
 
 ## ERD 및 Entity 설계
