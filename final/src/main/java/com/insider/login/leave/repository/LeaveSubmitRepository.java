@@ -9,6 +9,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @Repository
@@ -20,5 +21,5 @@ public interface LeaveSubmitRepository extends JpaRepository<LeaveSubmit, Intege
     @Query("SELECT l FROM LeaveSubmit l WHERE l.leaveSubApplicant = :applicantId")
     List<LeaveSubmit> findByMemberId(@Param("applicantId") int applicantId);
 
-    LeaveSubmit findById(int leaveSubNo);
+    Optional<LeaveSubmit> findById(int id);
 }
