@@ -1,7 +1,7 @@
 package com.insider.login.leave.controller;
 
 import com.insider.login.common.CommonController;
-import com.insider.login.common.ResponseMessage;
+import com.insider.login.common.response.ResponseMessage;
 import com.insider.login.leave.dto.LeaveAccrualDTO;
 import com.insider.login.leave.dto.LeaveInfoDTO;
 import com.insider.login.leave.dto.LeaveMemberDTO;

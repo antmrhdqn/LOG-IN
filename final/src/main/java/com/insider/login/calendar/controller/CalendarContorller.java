@@ -2,7 +2,7 @@ package com.insider.login.calendar.controller;
 
 import com.insider.login.calendar.dto.CalendarDTO;
 import com.insider.login.calendar.service.CalendarService;
-import com.insider.login.common.ResponseMessage;
+import com.insider.login.common.response.ResponseMessage;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

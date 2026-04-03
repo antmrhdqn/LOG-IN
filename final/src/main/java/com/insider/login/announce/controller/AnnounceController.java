@@ -1,7 +1,7 @@
 package com.insider.login.announce.controller;
 
 import com.insider.login.common.CommonController;
-import com.insider.login.common.ResponseMessage;
+import com.insider.login.common.response.ResponseMessage;
 import com.insider.login.config.YmlConfig;
 import com.insider.login.announce.dto.AnnounceDTO;
 import com.insider.login.announce.entity.AncFile;

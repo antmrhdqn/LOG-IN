@@ -1,7 +1,7 @@
 package com.insider.login.survey.controller;
 
 import com.insider.login.common.CommonController;
-import com.insider.login.common.ResponseMessage;
+import com.insider.login.common.response.ResponseMessage;
 import com.insider.login.survey.dto.SurveyDTO;
 import com.insider.login.survey.dto.SurveyInsertRequestDTO;
 import com.insider.login.survey.dto.SurveyResponseDTO;

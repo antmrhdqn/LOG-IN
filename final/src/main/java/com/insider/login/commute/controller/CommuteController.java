@@ -1,12 +1,10 @@
 package com.insider.login.commute.controller;
 
 import com.insider.login.common.CommonController;
-import com.insider.login.common.ResponseMessage;
+import com.insider.login.common.response.ResponseMessage;
 import com.insider.login.commute.dto.*;
-import com.insider.login.commute.entity.Commute;
 import com.insider.login.commute.service.CommuteService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

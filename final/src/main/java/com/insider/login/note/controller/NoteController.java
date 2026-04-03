@@ -1,7 +1,7 @@
 package com.insider.login.note.controller;
 
 import com.insider.login.common.CommonController;
-import com.insider.login.common.ResponseMessage;
+import com.insider.login.common.response.ResponseMessage;
 import com.insider.login.note.dto.NoteDTO;
 import com.insider.login.note.entity.Note;
 import com.insider.login.note.service.NoteService;
