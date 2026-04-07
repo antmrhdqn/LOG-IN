@@ -7,7 +7,7 @@
 - **김동환**
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/antmrhdqn)
 
-- **김정희**
+- **김정희** 
 [<img src="https://img.shields.io/badge/Github-Link-181717?logo=Github">](https://github.com/modaing)
 
 - **김지환**
