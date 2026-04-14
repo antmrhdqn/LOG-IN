@@ -1,35 +1,36 @@
 package com.insider.login.common.error;
 
-import com.insider.login.common.response.ResponseMessage; // 변경된 패키지 임포트
+import com.insider.login.common.response.ErrorResponse;
 import com.insider.login.common.error.exception.BusinessException;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+@Slf4j
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(BusinessException.class)
-    protected ResponseEntity<ResponseMessage<String>> handleBusinessException(BusinessException e) {
+    protected ResponseEntity<ErrorResponse> handleBusinessException(BusinessException e) {
         ErrorCode errorCode = e.getErrorCode();
 
         return new ResponseEntity<>(
-                ResponseMessage.error(errorCode.getStatus(), errorCode.getMessage(), errorCode.getCode()),
+                ErrorResponse.of(errorCode),
                 HttpStatus.valueOf(errorCode.getStatus())
+
+
         );
     }
 
+    // 예상치 못한 에러 처리
     @ExceptionHandler(Exception.class)
-    protected ResponseEntity<ResponseMessage<String>> handleException(Exception e) {
-        ErrorCode errorCode = ErrorCode.INTERNAL_SERVER_ERROR;
+    protected ResponseEntity<ErrorResponse> handleException(Exception e) {
+        log.error("Unhandled exception", e);
 
         return new ResponseEntity<>(
-                ResponseMessage.error(
-                        errorCode.getStatus(),
-                        errorCode.getMessage(),
-                        errorCode.getCode()
-                ),
+                ErrorResponse.of(ErrorCode.INTERNAL_SERVER_ERROR),
                 HttpStatus.INTERNAL_SERVER_ERROR
         );
     }
