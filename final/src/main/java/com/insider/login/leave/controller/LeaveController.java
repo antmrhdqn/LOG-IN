@@ -68,8 +68,8 @@ public class LeaveController extends CommonController {
     /**
      * 휴가 신청 취소 (삭제)
      */
-    @DeleteMapping("/leaveSubmits/{LeaveSubNo}")
-    public ResponseEntity<ResponseMessage<Void>> deleteSubmit(@PathVariable("LeaveSubNo") int leaveSubNo) {
+    @DeleteMapping("/leaveSubmits/{leaveSubNo}")
+    public ResponseEntity<ResponseMessage<Void>> deleteSubmit(@PathVariable("leaveSubNo") int leaveSubNo) {
         leaveService.deleteSubmit(leaveSubNo);
 
         return ResponseEntity.ok(ResponseMessage.success("신청 취소 성공", null));
