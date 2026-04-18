@@ -6,35 +6,47 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity(name = "InsiteLeaveSubmit")
-@Table(name = "LEAVE_SUBMIT")
+@Table(name = "leave_request")
 public class InsiteLeaveSubmit {
 
     @Id
-    @Column(name = "LEAVE_SUB_NO", nullable = false)
+    @Column(name = "leave_request_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int leaveSubNo;                     // 신청 번호
+    private Long leaveRequestId;
 
-    @ManyToOne
-    @JoinColumn(name = "MEMBER_ID", referencedColumnName = "member_id", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "member_id", referencedColumnName = "member_id", nullable = false)
     private InsiteMember leaveMember;
 
-    @Column(name = "LEAVE_SUB_START_DATE", nullable = false) // YYYY-MM-DD
-    private LocalDate leaveSubStartDate;             // 휴가 시작일
+    @Column(name = "start_date", nullable = false)
+    private LocalDate startDate;
 
-    @Column(name = "LEAVE_SUB_END_DATE", nullable = false)  // YYYY-MM-DD
-    private LocalDate  leaveSubEndDate;               // 휴가 종료일
+    @Column(name = "end_date", nullable = false)
+    private LocalDate endDate;
 
-    @Column(name = "LEAVE_SUB_STATUS", nullable = false, columnDefinition = "VARCHAR(6)") // 승인, 반려, 대기
-    private String leaveSubStatus;              // 처리 상태
-
-
-
-
-
-
-
+    @Column(name = "status", nullable = false)
+    private String status;
 
     protected InsiteLeaveSubmit() {
     }
 
+    public Long getLeaveRequestId() {
+        return leaveRequestId;
+    }
+
+    public InsiteMember getLeaveMember() {
+        return leaveMember;
+    }
+
+    public LocalDate getStartDate() {
+        return startDate;
+    }
+
+    public LocalDate getEndDate() {
+        return endDate;
+    }
+
+    public String getStatus() {
+        return status;
+    }
 }

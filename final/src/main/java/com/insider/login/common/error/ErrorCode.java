@@ -29,6 +29,13 @@ public enum ErrorCode {
     INSUFFICIENT_LEAVE_DAYS(400, "L001", "잔여 휴가 일수가 부족합니다."),
     INVALID_LEAVE_PERIOD(400, "L002", "종료일이 시작일보다 빠를 수 없습니다."),
     LEAVE_NOT_FOUND(404, "L003", "해당 휴가 신청 내역을 찾을 수 없습니다."),
+    LEAVE_BALANCE_NOT_FOUND(404, "L004", "해당 연도의 휴가 잔여일수 정보를 찾을 수 없습니다."),
+    LEAVE_DUPLICATE_DATE(400, "L005", "해당 날짜에 이미 신청된 휴가가 있습니다."),
+    LEAVE_PAST_DATE(400, "L006", "과거 날짜로는 휴가를 신청할 수 없습니다."),
+    LEAVE_HALF_DAY_DATE_MISMATCH(400, "L007", "반차는 시작일과 종료일이 같아야 합니다."),
+    LEAVE_INVALID_STATUS_TRANSITION(400, "L008", "현재 상태에서는 해당 처리를 할 수 없습니다."),
+    LEAVE_CANCEL_AFTER_START(400, "L009", "이미 시작된 휴가는 취소할 수 없습니다."),
+    LEAVE_ALREADY_FINISHED(400, "L010", "이미 종결된 신청 건입니다."),
 
     // 일정(Calendar) 관련 에러
     CALENDAR_NOT_FOUND(404, "CA01", "해당 일정을 찾을 수 없습니다."),

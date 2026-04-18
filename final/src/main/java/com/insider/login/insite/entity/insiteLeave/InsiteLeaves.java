@@ -1,19 +1,50 @@
 package com.insider.login.insite.entity.insiteLeave;
 
 import jakarta.persistence.*;
+
+import java.math.BigDecimal;
+
 @Entity(name = "insiteLeaves")
-@Table(name = "LEAVES")
+@Table(name = "leave_balance")
 public class InsiteLeaves {
 
-        @Id
-        @Column(name = "LEAVE_NO", nullable = false)
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private int leaveNo;            // 휴가 번호
+    @Id
+    @Column(name = "leave_balance_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long leaveBalanceId;
 
-        @Column(name = "MEMBER_ID", nullable = false)
-        private int memberId;        // 사번
+    @Column(name = "member_id", nullable = false)
+    private int memberId;
 
-        @Column(name = "LEVAE_DAYS", nullable = false)
-        private int leaveDays;          // 휴가 일수
+    @Column(name = "leave_type", nullable = false)
+    private String leaveType;
 
+    @Column(name = "remaining_days", nullable = false)
+    private BigDecimal remainingDays;
+
+    @Column(name = "year", nullable = false)
+    private int year;
+
+    protected InsiteLeaves() {
+    }
+
+    public Long getLeaveBalanceId() {
+        return leaveBalanceId;
+    }
+
+    public int getMemberId() {
+        return memberId;
+    }
+
+    public String getLeaveType() {
+        return leaveType;
+    }
+
+    public BigDecimal getRemainingDays() {
+        return remainingDays;
+    }
+
+    public int getYear() {
+        return year;
+    }
 }
